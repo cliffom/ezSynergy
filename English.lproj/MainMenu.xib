@@ -12,8 +12,8 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="575"/>
 			<integer value="533"/>
+			<integer value="575"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -87,6 +87,7 @@
 						<reference key="NSMixedImage" ref="986314930"/>
 					</object>
 				</object>
+				<bool key="NSNoAutoenable">YES</bool>
 			</object>
 			<object class="NSWindowTemplate" id="576354408">
 				<int key="NSWindowStyleMask">3</int>

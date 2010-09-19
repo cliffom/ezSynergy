@@ -41,7 +41,6 @@
 }
 
 -(void)awakeFromNib {
-	[statusMenu setAutoenablesItems:NO];	
 	statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength] retain];
 	[statusItem setMenu:statusMenu];
 	[statusItem setImage:(NSImage *)synergyIcon];
