@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	089C165DFE840E0CC02AAC07 /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {967, 307}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 45}";
+		};
+	};
+	256AC3D80F4B6AC300CF3369 /* ezSynergyAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {967, 624}}";
+			sepNavSelRange = "{0, 704}";
+			sepNavVisRange = "{0, 757}";
+			sepNavWindowFrame = "{{15, 56}, {750, 722}}";
+		};
+	};
+	256AC3D90F4B6AC300CF3369 /* ezSynergyAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {967, 2379}}";
+			sepNavSelRange = "{26, 0}";
+			sepNavVisRange = "{0, 777}";
+			sepNavWindowFrame = "{{15, 56}, {975, 722}}";
+		};
+	};
+	256AC3F00F4B6AF500CF3369 /* ezSynergy_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {967, 277}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 149}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeArchitecturePreference = x86_64;
+		activeBuildConfigurationName = Release;
+		activeExecutable = 8ECEF3CA1243E3D30006EC28 /* ezSynergy */;
+		activeTarget = 8D1107260486CEB800E47090 /* ezSynergy */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* ezSynergy */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = 8ECEF3E41243E3F00006EC28 /* Code sense */;
+		executables = (
+			8ECEF3CA1243E3D30006EC28 /* ezSynergy */,
+		);
+		expressions = (
+			binaryPath,
+			args,
+			serverAddress,
+			d,
+			pi,
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					198,
+					20,
+					99,
+					99,
+					29,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					789,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 306558635;
+			PBXWorkspaceStateSaveDate = 306558635;
+		};
+		perUserProjectItems = {
+			8E1EDFD61245A153001EC987 /* PBXTextBookmark */ = 8E1EDFD61245A153001EC987 /* PBXTextBookmark */;
+			8ECEF5C612443CE00006EC28 /* PBXBookmark */ = 8ECEF5C612443CE00006EC28 /* PBXBookmark */;
+			8ECEF5C712443CE00006EC28 /* PBXBookmark */ = 8ECEF5C712443CE00006EC28 /* PBXBookmark */;
+			8ECEF5C812443CE00006EC28 /* PBXBookmark */ = 8ECEF5C812443CE00006EC28 /* PBXBookmark */;
+			8ECEF5C912443CE00006EC28 /* PBXBookmark */ = 8ECEF5C912443CE00006EC28 /* PBXBookmark */;
+			8EE74F011245C1970095BA36 /* PBXTextBookmark */ = 8EE74F011245C1970095BA36 /* PBXTextBookmark */;
+			8EE74F021245C1970095BA36 /* PBXTextBookmark */ = 8EE74F021245C1970095BA36 /* PBXTextBookmark */;
+			8EE74F031245C1970095BA36 /* PBXTextBookmark */ = 8EE74F031245C1970095BA36 /* PBXTextBookmark */;
+			8EE74F041245C1970095BA36 /* PBXTextBookmark */ = 8EE74F041245C1970095BA36 /* PBXTextBookmark */;
+			8EE74F051245C1970095BA36 /* PBXTextBookmark */ = 8EE74F051245C1970095BA36 /* PBXTextBookmark */;
+			8EE74F061245C1970095BA36 /* PBXTextBookmark */ = 8EE74F061245C1970095BA36 /* PBXTextBookmark */;
+			8EE74F071245C1970095BA36 /* PlistBookmark */ = 8EE74F071245C1970095BA36 /* PlistBookmark */;
+			8EE74F081245C1970095BA36 /* PlistBookmark */ = 8EE74F081245C1970095BA36 /* PlistBookmark */;
+		};
+		sourceControlManager = 8ECEF3E31243E3F00006EC28 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {967, 338}}";
+			sepNavSelRange = "{269, 0}";
+			sepNavVisRange = "{0, 748}";
+		};
+	};
+	8D1107260486CEB800E47090 /* ezSynergy */ = {
+		activeExec = 0;
+		executables = (
+			8ECEF3CA1243E3D30006EC28 /* ezSynergy */,
+		);
+	};
+	8D1107310486CEB800E47090 /* ezSynergy-Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{15, 56}, {750, 722}}";
+		};
+	};
+	8E1EDFD61245A153001EC987 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 089C165DFE840E0CC02AAC07 /* English */;
+		name = "InfoPlist.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 45;
+		vrLoc = 0;
+	};
+	8ECEF3CA1243E3D30006EC28 /* ezSynergy */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = ezSynergy;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+			$cs = 1;
+			$ds = 1;
+			$eflags = 1;
+			$es = 1;
+			$fs = 1;
+			$gs = 1;
+			$r10 = 1;
+			$r11 = 1;
+			$r12 = 1;
+			$r13 = 1;
+			$r14 = 1;
+			$r15 = 1;
+			$r8 = 1;
+			$r9 = 1;
+			$rax = 1;
+			$rbp = 1;
+			$rbx = 1;
+			$rcx = 1;
+			$rdi = 1;
+			$rdx = 1;
+			$rip = 1;
+			$rsi = 1;
+			$rsp = 1;
+			$ss = 1;
+		};
+	};
+	8ECEF3E31243E3F00006EC28 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	8ECEF3E41243E3F00006EC28 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8ECEF50112442AFD0006EC28 /* SynergyHelper.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {967, 416}}";
+			sepNavSelRange = "{21, 0}";
+			sepNavVisRange = "{0, 725}";
+		};
+	};
+	8ECEF50212442AFD0006EC28 /* SynergyHelper.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {967, 949}}";
+			sepNavSelRange = "{3, 21}";
+			sepNavVisRange = "{0, 727}";
+			sepNavWindowFrame = "{{15, 76}, {986, 702}}";
+		};
+	};
+	8ECEF5C612443CE00006EC28 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 8ECEF5BA12443A7F0006EC28 /* syn_clr_norm.png */;
+	};
+	8ECEF5C712443CE00006EC28 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 8ECEF59C124436E30006EC28 /* syn_clr_off.png */;
+	};
+	8ECEF5C812443CE00006EC28 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 8ECEF59D124436E30006EC28 /* syn_clr_on.png */;
+	};
+	8ECEF5C912443CE00006EC28 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 8ECEF5B0124439BC0006EC28 /* synergy_icon.icns */;
+	};
+	8EE74F011245C1970095BA36 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D80F4B6AC300CF3369 /* ezSynergyAppDelegate.h */;
+		name = "ezSynergyAppDelegate.h: 1";
+		rLen = 704;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 757;
+		vrLoc = 0;
+	};
+	8EE74F021245C1970095BA36 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3D90F4B6AC300CF3369 /* ezSynergyAppDelegate.m */;
+		name = "ezSynergyAppDelegate.m: 2";
+		rLen = 0;
+		rLoc = 26;
+		rType = 0;
+		vrLen = 777;
+		vrLoc = 0;
+	};
+	8EE74F031245C1970095BA36 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8ECEF50112442AFD0006EC28 /* SynergyHelper.h */;
+		name = "SynergyHelper.h: 2";
+		rLen = 0;
+		rLoc = 21;
+		rType = 0;
+		vrLen = 725;
+		vrLoc = 0;
+	};
+	8EE74F041245C1970095BA36 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8ECEF50212442AFD0006EC28 /* SynergyHelper.m */;
+		name = "SynergyHelper.m: 2";
+		rLen = 21;
+		rLoc = 3;
+		rType = 0;
+		vrLen = 727;
+		vrLoc = 0;
+	};
+	8EE74F051245C1970095BA36 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 256AC3F00F4B6AF500CF3369 /* ezSynergy_Prefix.pch */;
+		name = "ezSynergy_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 149;
+		vrLoc = 0;
+	};
+	8EE74F061245C1970095BA36 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 9";
+		rLen = 0;
+		rLoc = 269;
+		rType = 0;
+		vrLen = 748;
+		vrLoc = 0;
+	};
+	8EE74F071245C1970095BA36 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* ezSynergy-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			LSMinimumSystemVersion,
+		);
+		name = "/Users/cliffom/Development/ezSynergy/ezSynergy-Info.plist";
+		rLen = 0;
+		rLoc = 0;
+	};
+	8EE74F081245C1970095BA36 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* ezSynergy-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			LSMinimumSystemVersion,
+		);
+		name = "/Users/cliffom/Development/ezSynergy/ezSynergy-Info.plist";
+		rLen = 0;
+		rLoc = 0;
+	};
+}
