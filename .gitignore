@@ -1,2 +1,5 @@
 .DS_Store
 build/
+ezSynergy.xcodeproj/*.mode1v3
+ezSynergy.xcodeproj/*.pbxuser
+
