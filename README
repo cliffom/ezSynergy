@@ -1,13 +1,16 @@
 ezSynergy
 
-Michael Clifford
-michael@suitepotato.com
+OSX GUI Wrapper for Synergy (http://synergy-foss.org/)
+
+Michael Clifford <michael@suitepotato.com>
 http://suitepotato.com
 http://twitter.com/suiteblog
 
-This project was inspired by the QuickSynergy project and incorporates
+Synergy icons modified for this project by Chris Melby <me@chrismelby.com>
+
+The ezSynergy project was inspired by the
+QuickSynergy (http://code.google.com/p/quicksynergy/) project and incorporates
 some methods originally written by Otávio Cordeiro.
-QuickSynergy: http://code.google.com/p/quicksynergy/
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
