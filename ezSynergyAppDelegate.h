@@ -20,6 +20,10 @@
 #import <Cocoa/Cocoa.h>
 #import "SynergyHelper.h"
 
+#define STARTUP_ACTION_NONE 0
+#define STARTUP_ACTION_CLIENT 1
+#define STARTUP_ACTION_SERVER 2
+
 @interface ezSynergyAppDelegate : NSObject <NSApplicationDelegate> {
 	SynergyHelper *synergy;
 	
@@ -28,6 +32,7 @@
 	IBOutlet NSMenu *statusMenu;
 	IBOutlet NSMenuItem *startServer;
 	IBOutlet NSMenuItem *startClient;
+	IBOutlet NSMatrix *startupAction;
 	IBOutlet NSTextField *clientAbove;
 	IBOutlet NSTextField *clientRight;
 	IBOutlet NSTextField *clientBelow;

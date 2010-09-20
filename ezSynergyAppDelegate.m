@@ -37,7 +37,7 @@
 
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-	// Insert code here to initialize your application 
+	// Insert code here to initialize your application
 }
 
 -(void)awakeFromNib {
@@ -45,6 +45,19 @@
 	[statusItem setMenu:statusMenu];
 	[statusItem setImage:(NSImage *)synergyIcon];
 	[statusItem setHighlightMode:YES];
+	
+	switch ([startupAction selectedColumn]) {
+		case STARTUP_ACTION_NONE:
+			break;
+		case STARTUP_ACTION_CLIENT:
+			[self startClient:NULL];
+			break;
+		case STARTUP_ACTION_SERVER:
+			[self startServer:NULL];
+			break;
+		default:
+			break;
+	}
 }
 
 
