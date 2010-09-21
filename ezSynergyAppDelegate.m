@@ -26,11 +26,10 @@
 - (id) init
 {
 	if ((self = [super init])) {     
-        synergy = [[SynergyHelper alloc] init];
+		synergy = [[SynergyHelper alloc] init];
+		synergyIcon = [NSImage imageNamed:@"syn_clr_norm"];
+		synergyIconRunning = [NSImage imageNamed:@"syn_clr_on"];
     }
-	
-	synergyIcon			= [NSImage imageNamed:@"syn_clr_norm"];
-	synergyIconRunning	= [NSImage imageNamed:@"syn_clr_on"];
 	
 	return self;
 }
@@ -43,7 +42,7 @@
 -(void)awakeFromNib {
 	statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength] retain];
 	[statusItem setMenu:statusMenu];
-	[statusItem setImage:(NSImage *)synergyIcon];
+	[statusItem setImage:synergyIcon];
 	[statusItem setHighlightMode:YES];
 	
 	switch ([startupAction selectedColumn]) {
@@ -66,13 +65,13 @@
 	{
 		if ([synergy isSynergyRunning]) {
 			[synergy stop];
-			[statusItem setImage:(NSImage *)synergyIcon];
+			[statusItem setImage:synergyIcon];
 			[startServer setTitle:@"Start Server"];
 			[startClient setEnabled:YES];
 		}
 		else {
 			if ([synergy startServer]) {
-				[statusItem setImage:(NSImage *)synergyIconRunning];
+				[statusItem setImage:synergyIconRunning];
 				[startServer setTitle:@"Stop Server"];
 				[startClient setEnabled:NO];
 			}
@@ -84,12 +83,12 @@
 - (IBAction)startClient:(id)sender {
 	if ([synergy isSynergyRunning]) {
 		[synergy stop];
-		[statusItem setImage:(NSImage *)synergyIcon];
+		[statusItem setImage:synergyIcon];
 		[startClient setTitle:@"Start Client"];
 		[startServer setEnabled:YES];
 	} else {
 		if ([synergy connectToServer:[serverAddress stringValue]]) {
-			[statusItem setImage:(NSImage *)synergyIconRunning];
+			[statusItem setImage:synergyIconRunning];
 			[startClient setTitle:@"Stop Client"];
 			[startServer setEnabled:NO];
 		}
