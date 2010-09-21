@@ -20,6 +20,9 @@
 #import <Cocoa/Cocoa.h>
 #import "SynergyHelper.h"
 
+#define MENU_START_SERVER 0
+#define MENU_START_CLIENT 1
+
 #define STARTUP_ACTION_NONE 0
 #define STARTUP_ACTION_CLIENT 1
 #define STARTUP_ACTION_SERVER 2
@@ -46,11 +49,10 @@
 
 @property (assign) IBOutlet NSWindow *preferencesWindow;
 
-- (IBAction)startServer:(id)sender;
-- (IBAction)startClient:(id)sender;
+- (IBAction)toggleSynergy:(id)sender;
 - (IBAction)openPreferences:(id)sender;
 - (NSString *)bundleVersionNumber;
-- (NSString *)thisHostname;
+- (NSString *)hostName;
 - (BOOL)writeConfigFile;
 
 @end

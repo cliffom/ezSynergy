@@ -39,6 +39,7 @@
 	// Insert code here to initialize your application
 }
 
+
 -(void)awakeFromNib {
 	statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength] retain];
 	[statusItem setMenu:statusMenu];
@@ -49,10 +50,10 @@
 		case STARTUP_ACTION_NONE:
 			break;
 		case STARTUP_ACTION_CLIENT:
-			[self startClient:NULL];
+			[self toggleSynergy:startClient];
 			break;
 		case STARTUP_ACTION_SERVER:
-			[self startServer:NULL];
+			[self toggleSynergy:startServer];
 			break;
 		default:
 			break;
@@ -60,37 +61,38 @@
 }
 
 
-- (IBAction)startServer:(id)sender {
-	if ([self writeConfigFile])
-	{
-		if ([synergy isSynergyRunning]) {
-			[synergy stop];
-			[statusItem setImage:synergyIcon];
-			[startServer setTitle:@"Start Server"];
-			[startClient setEnabled:YES];
-		}
-		else {
-			if ([synergy startServer]) {
-				[statusItem setImage:synergyIconRunning];
-				[startServer setTitle:@"Stop Server"];
-				[startClient setEnabled:NO];
-			}
-		}
-	}
-}
-
-
-- (IBAction)startClient:(id)sender {
+- (IBAction) toggleSynergy:(id)sender {
 	if ([synergy isSynergyRunning]) {
 		[synergy stop];
 		[statusItem setImage:synergyIcon];
-		[startClient setTitle:@"Start Client"];
-		[startServer setEnabled:YES];
+		switch ([sender tag]) {
+			case MENU_START_SERVER:
+				[startServer setTitle:@"Start Server"];
+				[startClient setEnabled:YES];
+				break;
+			case MENU_START_CLIENT:
+				[startClient setTitle:@"Start Client"];
+				[startServer setEnabled:YES];
+		}
 	} else {
-		if ([synergy connectToServer:[serverAddress stringValue]]) {
-			[statusItem setImage:synergyIconRunning];
-			[startClient setTitle:@"Stop Client"];
-			[startServer setEnabled:NO];
+		switch ([sender tag]) {
+			case MENU_START_SERVER:
+				if ([self writeConfigFile]) {
+					if ([synergy startServer]) {
+						[statusItem setImage:synergyIconRunning];
+						[startServer setTitle:@"Stop Server"];
+						[startClient setEnabled:NO];
+						[statusItem setImage:synergyIconRunning];
+					}
+				}
+				break;
+			case MENU_START_CLIENT:
+				if ([synergy connectToServer:[serverAddress stringValue]]) {					
+					[startClient setTitle:@"Stop Client"];
+					[startServer setEnabled:NO];
+					[statusItem setImage:synergyIconRunning];
+				}
+				break;
 		}
 	}
 }
@@ -101,9 +103,10 @@
 }
 
 
-- (NSString *)thisHostname {
+- (NSString *)hostName {
 	return [[NSHost currentHost] name];	
 }
+
 
 - (IBAction)openPreferences:(id)sender {
 	[NSApp activateIgnoringOtherApps:YES];
@@ -115,7 +118,7 @@
 {
     NSError *error = [NSError errorWithDomain:NSPOSIXErrorDomain code:0 userInfo:nil];
     NSMutableString *line;
-    NSString *localhost = [self thisHostname];
+    NSString *localhost = [self hostName];
     NSString *up = [clientAbove stringValue];
     NSString *down = [clientBelow stringValue];
     NSString *left = [clientLeft stringValue];
