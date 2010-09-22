@@ -22,30 +22,24 @@
 
 @implementation SynergyHelper
 
-- (id) init
-{	
+- (id) init {	
+	if ((self = [super init])) {
+	}
 	return self;
 }
 
-- (BOOL) running;
-{
+- (BOOL) running; {
 	return [synergy2 isRunning];
 }
 
 
-- (BOOL) startClient: (NSString *)serverAddress
-{
+- (BOOL) startClient: (NSString *)serverAddress {
 	NSArray *args;
 	NSString *binaryPath;
 	binaryPath = [[NSBundle mainBundle] pathForAuxiliaryExecutable:@"Contents/Resources/synergyc"];
 	args = [NSArray arrayWithObjects:@"-f", serverAddress, nil];
 	
-	synergy2 = [[NSTask alloc] init];
-	[synergy2  setLaunchPath:binaryPath];	
-	[synergy2 setArguments:args];
-	[synergy2 launch];
-	
-	return [synergy2 isRunning];
+	return [self launch:binaryPath andArgs:args];		
 }
 
 - (BOOL) startServer {
@@ -55,17 +49,20 @@
 	binaryPath = [[NSBundle mainBundle] pathForAuxiliaryExecutable:@"Contents/Resources/synergys"];
 	args = [NSArray arrayWithObjects:@"-f", @"-c", configFile, nil];
 	
+	return [self launch:binaryPath andArgs:args];	
+}
+
+
+- (BOOL) launch: (NSString*)binaryPath andArgs:(NSArray*)args {
 	synergy2 = [[NSTask alloc] init];
 	[synergy2 setLaunchPath:binaryPath];
 	[synergy2 setArguments:args];
 	[synergy2 launch];
-	
 	return [synergy2 isRunning];
 }
 
 
-- (BOOL) stop
-{
+- (BOOL) stop {
 	[synergy2 interrupt];
 	[synergy2 release];
 	synergy2 = nil;

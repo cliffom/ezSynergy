@@ -28,6 +28,7 @@
 - (BOOL) running;
 - (BOOL) startClient: (NSString *)serverName;
 - (BOOL) startServer;
+- (BOOL) launch: (NSString*)binaryPath andArgs:(NSArray*)args;
 - (BOOL) stop;
 
 @end
