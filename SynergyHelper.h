@@ -25,8 +25,8 @@
     NSTask *synergy2;
 }
 
-- (BOOL) isSynergyRunning;
-- (BOOL) connectToServer: (NSString *)serverName;
+- (BOOL) running;
+- (BOOL) startClient: (NSString *)serverName;
 - (BOOL) startServer;
 - (BOOL) stop;
 

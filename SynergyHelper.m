@@ -27,13 +27,13 @@
 	return self;
 }
 
-- (BOOL) isSynergyRunning
+- (BOOL) running;
 {
 	return [synergy2 isRunning];
 }
 
 
-- (BOOL) connectToServer: (NSString *)serverAddress
+- (BOOL) startClient: (NSString *)serverAddress
 {
 	NSArray *args;
 	NSString *binaryPath;

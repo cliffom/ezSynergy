@@ -62,7 +62,7 @@
 
 
 - (IBAction) toggleSynergy: (id)sender {
-	if ([synergy isSynergyRunning] && [synergy stop]) {
+	if ([synergy running] && [synergy stop]) {
 		[statusItem setImage:synergyIcon];
 		switch ([sender tag]) {
 			case MENU_START_SERVER:
@@ -80,17 +80,18 @@
 					if ([synergy startServer]) {
 						[startServer setTitle:@"Stop Server"];
 						[startClient setEnabled:NO];
-						[statusItem setImage:synergyIconRunning];
 					}
 				}
 				break;
 			case MENU_START_CLIENT:
-				if ([synergy connectToServer:[serverAddress stringValue]]) {					
+				if ([synergy startClient:[serverAddress stringValue]]) {					
 					[startClient setTitle:@"Stop Client"];
 					[startServer setEnabled:NO];
-					[statusItem setImage:synergyIconRunning];
 				}
 				break;
+		}
+		if ([synergy running]) {
+			[statusItem setImage:synergyIconRunning];
 		}
 	}
 }
@@ -186,7 +187,7 @@
 
 - (void) applicationWillTerminate: (NSNotification *)aNotification
 {
-	if ([synergy isSynergyRunning]) {
+	if ([synergy running]) {
 		[synergy stop];
 	}
 	[synergy release];
