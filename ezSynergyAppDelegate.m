@@ -40,7 +40,8 @@
 
 
 - (void) awakeFromNib {
-	statusItem = [[[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength] retain];
+	statusItem = [[[NSStatusBar systemStatusBar]
+                   statusItemWithLength:NSVariableStatusItemLength] retain];
 	[statusItem setMenu:statusMenu];
 	[statusItem setImage:synergyIcon];
 	[statusItem setHighlightMode:YES];
@@ -97,7 +98,8 @@
 
 
 - (NSString *) bundleVersionNumber {
-	return [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];	
+	return [[[NSBundle mainBundle] infoDictionary]
+            objectForKey:@"CFBundleVersion"];	
 }
 
 
@@ -113,7 +115,8 @@
 
 
 - (BOOL) writeConfigFile {
-	NSError *error = [NSError errorWithDomain:NSPOSIXErrorDomain code:0 userInfo:nil];
+	NSError *error = [NSError errorWithDomain:NSPOSIXErrorDomain
+                                         code:0 userInfo:nil];
 	NSMutableString *line;
 	NSString *localhost = [self hostName];
 	NSString *up = [clientAbove stringValue];
