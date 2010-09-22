@@ -28,6 +28,6 @@
 - (BOOL) isSynergyRunning;
 - (BOOL) connectToServer: (NSString *)serverName;
 - (BOOL) startServer;
-- (void) stop;
+- (BOOL) stop;
 
 @end

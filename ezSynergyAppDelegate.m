@@ -62,8 +62,7 @@
 
 
 - (IBAction) toggleSynergy: (id)sender {
-	if ([synergy isSynergyRunning]) {
-		[synergy stop];
+	if ([synergy isSynergyRunning] && [synergy stop]) {
 		[statusItem setImage:synergyIcon];
 		switch ([sender tag]) {
 			case MENU_START_SERVER:

@@ -67,11 +67,13 @@
 }
 
 
-- (void) stop
+- (BOOL) stop
 {
 	[synergy2 interrupt];
 	[synergy2 release];
 	synergy2 = nil;
+	
+	return ![synergy2 isRunning];
 }
 
 
