@@ -37,9 +37,7 @@
 {
 	NSArray *args;
 	NSString *binaryPath;
-	NSBundle *ezSynergyBundle = [NSBundle mainBundle];
-	
-	binaryPath = [ezSynergyBundle pathForAuxiliaryExecutable:@"Contents/Resources/synergyc"];
+	binaryPath = [[NSBundle mainBundle] pathForAuxiliaryExecutable:@"Contents/Resources/synergyc"];
 	args = [NSArray arrayWithObjects:@"-f", serverAddress, nil];
 	
 	synergy2 = [[NSTask alloc] init];
@@ -53,13 +51,12 @@
 - (BOOL) startServer {
 	NSArray *args;
 	NSString *binaryPath;
-	NSBundle *ezSynergyBundle = [NSBundle mainBundle];
 	NSString *configFile = [NSString stringWithFormat:@"%@/.ezSynergy.config", NSHomeDirectory()];
+	binaryPath = [[NSBundle mainBundle] pathForAuxiliaryExecutable:@"Contents/Resources/synergys"];
+	args = [NSArray arrayWithObjects:@"-f", @"-c", configFile, nil];
 	
-	binaryPath = [ezSynergyBundle pathForAuxiliaryExecutable:@"Contents/Resources/synergys"];
 	synergy2 = [[NSTask alloc] init];
 	[synergy2 setLaunchPath:binaryPath];
-	args = [NSArray arrayWithObjects:@"-f", @"-c", configFile, nil];
 	[synergy2 setArguments:args];
 	[synergy2 launch];
 	
