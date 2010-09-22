@@ -42,17 +42,17 @@
 	IBOutlet NSTextField *clientLeft;
 	IBOutlet NSTextField *serverAddress;
 	
-    NSStatusItem *statusItem;
+	NSStatusItem *statusItem;
 	NSImage *synergyIcon;
 	NSImage *synergyIconRunning;
 }
 
 @property (assign) IBOutlet NSWindow *preferencesWindow;
 
-- (IBAction)toggleSynergy:(id)sender;
-- (IBAction)openPreferences:(id)sender;
-- (NSString *)bundleVersionNumber;
-- (NSString *)hostName;
-- (BOOL)writeConfigFile;
+- (IBAction) toggleSynergy: (id)sender;
+- (IBAction) openPreferences: (id)sender;
+- (NSString *) bundleVersionNumber;
+- (NSString *) hostName;
+- (BOOL) writeConfigFile;
 
 @end

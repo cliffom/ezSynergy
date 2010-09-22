@@ -23,17 +23,17 @@
 @implementation SynergyHelper
 
 - (id) init
-{    
-    return self;
+{	
+	return self;
 }
 
-- (BOOL)isSynergyRunning
+- (BOOL) isSynergyRunning
 {
-    return [synergy2 isRunning];
+	return [synergy2 isRunning];
 }
 
 
-- (BOOL)connectToServer:(NSString *)serverAddress
+- (BOOL) connectToServer: (NSString *)serverAddress
 {
 	NSArray *args;
 	NSString *binaryPath;
@@ -67,11 +67,11 @@
 }
 
 
-- (void)stop
+- (void) stop
 {
-    [synergy2 interrupt];
-    [synergy2 release];
-    synergy2 = nil;
+	[synergy2 interrupt];
+	[synergy2 release];
+	synergy2 = nil;
 }
 
 
