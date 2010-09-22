@@ -23,8 +23,7 @@
 @synthesize preferencesWindow;
 
 
-- (id) init
-{
+- (id) init {
 	if ((self = [super init])) {	 
 		synergy = [[SynergyHelper alloc] init];
 		synergyIcon = [NSImage imageNamed:@"syn_clr_norm"];
@@ -113,8 +112,7 @@
 }
 
 
-- (BOOL) writeConfigFile
-{
+- (BOOL) writeConfigFile {
 	NSError *error = [NSError errorWithDomain:NSPOSIXErrorDomain code:0 userInfo:nil];
 	NSMutableString *line;
 	NSString *localhost = [self hostName];
@@ -185,8 +183,7 @@
 }
 
 
-- (void) applicationWillTerminate: (NSNotification *)aNotification
-{
+- (void) applicationWillTerminate: (NSNotification *)aNotification {
 	if ([synergy running]) {
 		[synergy stop];
 	}
