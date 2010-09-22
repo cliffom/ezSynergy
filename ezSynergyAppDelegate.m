@@ -79,7 +79,6 @@
 			case MENU_START_SERVER:
 				if ([self writeConfigFile]) {
 					if ([synergy startServer]) {
-						[statusItem setImage:synergyIconRunning];
 						[startServer setTitle:@"Stop Server"];
 						[startClient setEnabled:NO];
 						[statusItem setImage:synergyIconRunning];
