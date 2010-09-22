@@ -2,4 +2,6 @@
 build/
 ezSynergy.xcodeproj/*.mode1v3
 ezSynergy.xcodeproj/*.pbxuser
+ezSynergy.xcodeproj/project.xcworkspace
+ezSynergy.xcodeproj/xcuserdata
 
