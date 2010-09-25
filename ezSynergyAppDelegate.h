@@ -36,6 +36,7 @@
 	IBOutlet NSMenuItem *startServer;
 	IBOutlet NSMenuItem *startClient;
 	IBOutlet NSMatrix *startupAction;
+	IBOutlet NSButton *openPreferencesOnStartup;
 	IBOutlet NSTextField *clientAbove;
 	IBOutlet NSTextField *clientRight;
 	IBOutlet NSTextField *clientBelow;

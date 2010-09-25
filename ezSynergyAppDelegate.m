@@ -46,6 +46,10 @@
 	[statusItem setImage:synergyIcon];
 	[statusItem setHighlightMode:YES];
 	
+	if ([openPreferencesOnStartup state] == NSOnState) {		
+		[self openPreferences:nil];
+	}
+	
 	switch ([startupAction selectedColumn]) {
 		case STARTUP_ACTION_NONE:
 			break;
@@ -57,7 +61,7 @@
 			break;
 		default:
 			break;
-	}
+	}	
 }
 
 
