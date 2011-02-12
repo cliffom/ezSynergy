@@ -26,8 +26,8 @@
 - (id) init {
 	if ((self = [super init])) {	 
 		synergy = [[SynergyHelper alloc] init];
-		synergyIcon = [NSImage imageNamed:@"syn_clr_norm"];
-		synergyIconRunning = [NSImage imageNamed:@"syn_clr_on"];
+		synergyIcon = [NSImage imageNamed:@"syn_bw_norm"];
+		synergyIconRunning = [NSImage imageNamed:@"syn_bw_on"];
 	}
 	
 	return self;
