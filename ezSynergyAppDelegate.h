@@ -41,7 +41,7 @@
 	IBOutlet NSTextField *clientRight;
 	IBOutlet NSTextField *clientBelow;
 	IBOutlet NSTextField *clientLeft;
-	IBOutlet NSTextField *serverAddress;
+	IBOutlet NSComboBox *serverAddress;
 	
 	NSStatusItem *statusItem;
 	NSImage *synergyIcon;

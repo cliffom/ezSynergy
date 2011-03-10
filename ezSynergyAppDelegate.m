@@ -61,7 +61,9 @@
 			break;
 		default:
 			break;
-	}	
+	}
+	[serverAddress addItemWithObjectValue:@"192.168.1.20"];
+	[serverAddress addItemWithObjectValue:@"10.0.1.80"];
 }
 
 
