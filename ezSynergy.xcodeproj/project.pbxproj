@@ -13,12 +13,10 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		8E1378E213071E0F00E9E22C /* syn_bw_norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1378DF13071E0F00E9E22C /* syn_bw_norm.png */; };
-		8E1378E313071E0F00E9E22C /* syn_bw_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1378E013071E0F00E9E22C /* syn_bw_off.png */; };
 		8E1378E413071E0F00E9E22C /* syn_bw_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1378E113071E0F00E9E22C /* syn_bw_on.png */; };
 		8ECEF45C1243F4400006EC28 /* synergyc in Resources */ = {isa = PBXBuildFile; fileRef = 8ECEF45A1243F4400006EC28 /* synergyc */; };
 		8ECEF45D1243F4400006EC28 /* synergys in Resources */ = {isa = PBXBuildFile; fileRef = 8ECEF45B1243F4400006EC28 /* synergys */; };
 		8ECEF50312442AFD0006EC28 /* SynergyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ECEF50212442AFD0006EC28 /* SynergyHelper.m */; };
-		8ECEF59F124436E30006EC28 /* syn_clr_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ECEF59C124436E30006EC28 /* syn_clr_off.png */; };
 		8ECEF5A0124436E30006EC28 /* syn_clr_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ECEF59D124436E30006EC28 /* syn_clr_on.png */; };
 		8ECEF5B1124439BC0006EC28 /* synergy_icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 8ECEF5B0124439BC0006EC28 /* synergy_icon.icns */; };
 		8ECEF5BB12443A7F0006EC28 /* syn_clr_norm.png in Resources */ = {isa = PBXBuildFile; fileRef = 8ECEF5BA12443A7F0006EC28 /* syn_clr_norm.png */; };
@@ -38,13 +36,11 @@
 		8D1107310486CEB800E47090 /* ezSynergy-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ezSynergy-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* ezSynergy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ezSynergy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E1378DF13071E0F00E9E22C /* syn_bw_norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syn_bw_norm.png; sourceTree = "<group>"; };
-		8E1378E013071E0F00E9E22C /* syn_bw_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syn_bw_off.png; sourceTree = "<group>"; };
 		8E1378E113071E0F00E9E22C /* syn_bw_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syn_bw_on.png; sourceTree = "<group>"; };
 		8ECEF45A1243F4400006EC28 /* synergyc */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = synergyc; sourceTree = "<group>"; };
 		8ECEF45B1243F4400006EC28 /* synergys */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = synergys; sourceTree = "<group>"; };
 		8ECEF50112442AFD0006EC28 /* SynergyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynergyHelper.h; sourceTree = "<group>"; };
 		8ECEF50212442AFD0006EC28 /* SynergyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SynergyHelper.m; sourceTree = "<group>"; };
-		8ECEF59C124436E30006EC28 /* syn_clr_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syn_clr_off.png; sourceTree = "<group>"; };
 		8ECEF59D124436E30006EC28 /* syn_clr_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syn_clr_on.png; sourceTree = "<group>"; };
 		8ECEF5B0124439BC0006EC28 /* synergy_icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = synergy_icon.icns; sourceTree = "<group>"; };
 		8ECEF5BA12443A7F0006EC28 /* syn_clr_norm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = syn_clr_norm.png; sourceTree = "<group>"; };
@@ -125,11 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				8E1378DF13071E0F00E9E22C /* syn_bw_norm.png */,
-				8E1378E013071E0F00E9E22C /* syn_bw_off.png */,
 				8E1378E113071E0F00E9E22C /* syn_bw_on.png */,
 				8ECEF5BA12443A7F0006EC28 /* syn_clr_norm.png */,
 				8ECEF5B0124439BC0006EC28 /* synergy_icon.icns */,
-				8ECEF59C124436E30006EC28 /* syn_clr_off.png */,
 				8ECEF59D124436E30006EC28 /* syn_clr_on.png */,
 				8D1107310486CEB800E47090 /* ezSynergy-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -213,12 +207,10 @@
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				8ECEF45C1243F4400006EC28 /* synergyc in Resources */,
 				8ECEF45D1243F4400006EC28 /* synergys in Resources */,
-				8ECEF59F124436E30006EC28 /* syn_clr_off.png in Resources */,
 				8ECEF5A0124436E30006EC28 /* syn_clr_on.png in Resources */,
 				8ECEF5B1124439BC0006EC28 /* synergy_icon.icns in Resources */,
 				8ECEF5BB12443A7F0006EC28 /* syn_clr_norm.png in Resources */,
 				8E1378E213071E0F00E9E22C /* syn_bw_norm.png in Resources */,
-				8E1378E313071E0F00E9E22C /* syn_bw_off.png in Resources */,
 				8E1378E413071E0F00E9E22C /* syn_bw_on.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
