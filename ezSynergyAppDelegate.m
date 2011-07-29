@@ -109,7 +109,7 @@
 }
 
 
-- (NSString *)hostName {
+- (NSString *) hostName {
 	return [[NSHost currentHost] name];	
 }
 
