@@ -129,13 +129,18 @@
 	NSString *down = [clientBelow stringValue];
 	NSString *left = [clientLeft stringValue];
 	NSString *right = [clientRight stringValue];
-	NSString *configFile = [NSString stringWithFormat:@"%@/.ezSynergy.config",
-							NSHomeDirectory()];
+	NSString *configFile = [NSString stringWithFormat:@"%@/.ezSynergy.config", NSHomeDirectory()];
 	
 	line = [[[NSMutableString alloc] init] autorelease];
 	
 	// Options
 	[line appendString:@"section: options\n"];
+    if ([screenSaverSync state] == NSOffState) {
+        [line appendString:@"\tscreenSaverSync = false\n"];
+    } else {
+        [line appendString:@"\tscreenSaverSync = true\n"];
+    }
+    [line appendString:@"\tkeystroke(f12) = lockCursorToScreen(toggle)\n"];
 	[line appendString:@"end\n\n"];
 	
 	// Screens
