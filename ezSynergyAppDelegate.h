@@ -38,6 +38,7 @@
 	IBOutlet NSMatrix *startupAction;
 	IBOutlet NSButton *openPreferencesOnStartup;
     IBOutlet NSButton *screenSaverSync;
+	IBOutlet NSButton *openAtLogin;
 	IBOutlet NSTextField *clientAbove;
 	IBOutlet NSTextField *clientRight;
 	IBOutlet NSTextField *clientBelow;
