@@ -247,8 +247,7 @@
 		//Retrieve the list of Login Items and cast them to
 		// a NSArray so that it will be easier to iterate.
 		NSArray  *loginItemsArray = (NSArray *)LSSharedFileListCopySnapshot(loginItems, &seedValue);
-		int i = 0;
-		for(i; i < [loginItemsArray count]; i++){
+		for(int i=0; i < [loginItemsArray count]; i++){
 			LSSharedFileListItemRef itemRef = (LSSharedFileListItemRef)[loginItemsArray
                                                                         objectAtIndex:i];
 			//Resolve the item with URL
