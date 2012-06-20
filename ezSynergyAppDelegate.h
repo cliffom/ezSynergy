@@ -56,5 +56,8 @@
 - (NSString *) bundleVersionNumber;
 - (NSString *) hostName;
 - (BOOL) writeConfigFile;
+- (IBAction) toggleOpenAtLogin: (id)sender;
+- (void) addAppToLoginItems;
+- (void) deleteAppFromLoginItems;
 
 @end
